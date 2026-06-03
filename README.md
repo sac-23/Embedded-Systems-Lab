@@ -1,6 +1,6 @@
 # Embedded-Systems-Lab
 
-A collection of Embedded Systems projects developed using **STM32F103**, **ESP32**, **Embedded C**, **Register-Level Programming**, and **FreeRTOS**.
+A collection of small embedded systems tasks and experiments developed using **STM32F103**, **ESP32**, **Embedded C**, **Register-Level Programming**, and **FreeRTOS**.
 
 ## Technologies Used
 
