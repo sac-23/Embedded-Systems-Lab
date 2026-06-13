@@ -14,8 +14,8 @@ Each domain contains its own set of projects, experiments, and detailed document
 
 ```text
 Embedded-Systems-Lab/
-├── STM32/
-├── FreeRTOS/
+├── stm32-register-level/
+├── ESP32_FreeRTOS/
 └── Data_Structures/
 ```
 
