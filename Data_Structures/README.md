@@ -2,49 +2,64 @@
 
 This directory contains implementations of fundamental data structures commonly used in embedded systems development.
 
-The focus is on understanding memory-efficient data management techniques and their practical applications in embedded software.
+The goal of these implementations is to strengthen understanding of data organization, memory management, and efficient data handling techniques used in resource-constrained embedded environments.
 
-## Data Structures
+## Implementations
 
 ### Linked List
 
-A dynamic data structure consisting of nodes connected through pointers.
+A singly linked list implementation developed using dynamic memory allocation.
 
-Topics covered:
+Features:
 
 * Node creation
-* Insertion operations
-* Deletion operations
-* Traversal
-* Dynamic memory management
+* Insertion at beginning
+* Insertion at end
+* Insertion at a specific position
+* Deletion at beginning
+* Deletion at end
+* Deletion by value
+* List traversal
+* List reversal
+* Memory cleanup
 
-Common applications:
+Concepts Practiced:
 
-* Task management
-* Dynamic data storage
-* Device driver data handling
+* Pointers and pointer-to-pointer usage
+* Dynamic memory allocation (`malloc`)
+* Memory deallocation (`free`)
+* Linked data structures
+* List manipulation algorithms
 
 ---
 
 ### Circular Buffer (Ring Buffer)
 
-A fixed-size FIFO (First-In First-Out) data structure that efficiently manages continuous streams of data.
+A fixed-size FIFO (First-In First-Out) buffer implementation using an array-based design.
 
-Topics covered:
+Features:
 
 * Buffer initialization
 * Read and write operations
 * Full and empty detection
-* Head and tail management
-* Wrap-around handling
+* Element count tracking
+* Head and tail index management
+* Circular wrap-around handling
 
-Common applications:
+Implementation Details:
 
-* UART communication
-* CAN message buffering
-* Sensor data acquisition
-* Real-time data logging
+* Buffer size is defined as a power of two.
+* Wrap-around is implemented using bitwise AND operations instead of modulo operations.
+* This approach avoids division-based remainder calculations and is commonly used in embedded systems for improved efficiency.
+
+Concepts Practiced:
+
+* FIFO data handling
+* Circular indexing
+* Memory-efficient buffering
+* Bitwise operations
+* Embedded optimization techniques
 
 ## Purpose
 
-The implementations in this directory are intended to strengthen understanding of core data structures and their usage in resource-constrained embedded systems.
+The implementations in this directory are intended to provide hands-on experience with data structures that are frequently used in embedded software, communication drivers, real-time systems, and memory-constrained applications.
